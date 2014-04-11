@@ -11,7 +11,7 @@ object day2 {
   sumOfSquares(1, 2)                              //> res0: Int = 5
   sumOfCubes(1, 2)                                //> res1: Int = 9
   
-  
+   
   
   def sum(f: Int=>Int, a: Int, b:Int):Int = if(a>b) 0 else f(a) + sum(f,a+1,b)
                                                   //> sum: (f: Int => Int, a: Int, b: Int)Int
