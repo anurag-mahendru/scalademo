@@ -41,11 +41,22 @@ object day_6 {
                                                   //> 1
   makestring(subrational(new Rational(1, 2), new Rational(2, 1)))
                                                   //> -3/2
-  makestring(deviderational(new Rational(1, 2), new Rational(2, 1)))
-                                                  //> 1/4
+
+  var x = new Rational(3, 4)                      //> x  : anurag.Rational = anurag.Rational@2b42fb92
+
+  x = x.add(new Rational(3, 4))
+  x.numer                                         //> res0: Int = 24
+  x.denom                                         //> res1: Int = 16
+
 }
 class Rational(x: Int, y: Int) {
 
   def numer = x;
   def denom = y;
+
+  def add(a: Rational) =
+    new Rational(
+      numer * a.denom + denom * a.numer,
+      denom * a.denom)
+
 }
