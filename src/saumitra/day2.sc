@@ -27,6 +27,8 @@ object day2 {
   }                                               //> foo: (func: Int => Int, num: Int)Int
 
 	var obj1:Customer =  new Customer(1);     //> obj1  : saumitra.Customer = new object created
+	var obj2:Customer =new Customer(2);       //> obj2  : saumitra.Customer = new object created
+	
 
 }
 
