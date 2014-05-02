@@ -34,6 +34,9 @@ object day_5 {
 
     sqrtitr(1.0)
   }                                               //> sqrt: (x: Double)Double
+  def y = 10                                      //> y: => Int
+  val x = sqrt(y)                                 //> x  : Double = 3.162277665175675
+  assert(x >= 0)
   sqrt(4)                                         //> res1: Double = 2.0000000929222947
 
   //functions return another function
