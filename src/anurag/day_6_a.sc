@@ -11,6 +11,10 @@ object day_6_a {
 
   val a = new rational(2)                         //> a  : anurag.rational = 2/1
   val b = new rational(2, 3)                      //> b  : anurag.rational = 2/3
+
+  z < y                                           //> res5: Boolean = false
+  z + y                                           //> res6: anurag.rational = 22/15
+  z - y                                           //> res7: anurag.rational = 2/15
 }
 class rational(x: Int, y: Int) {
   require(y != 0, "Denominator must not be zero")
@@ -36,6 +40,12 @@ class rational(x: Int, y: Int) {
   def less2(a: rational) = a.denom * this.numer < a.numer * this.denom
   def max(a: rational) = a.denom * numer > a.numer * denom
   def maxim(a: rational) = if (this.less(a)) a else this
+
+  def <(a: rational) = a.denom * this.numer < a.numer * this.denom
+  def max2(a: rational) = if (this < a) a else this
+
+  def +(a: rational) = add(a: rational)
+  def -(a: rational) = this + a.neg
 
   override def toString = numer + "/" + denom
 
