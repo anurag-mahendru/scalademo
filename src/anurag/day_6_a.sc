@@ -6,6 +6,7 @@ object day_6_a {
   y.less(z)                                       //> res0: Boolean = true
   y.maxim(z)                                      //> res1: anurag.rational = 4/5
   y.less2(z)                                      //> res2: Boolean = true
+  z add y                                         //> res3: anurag.rational = 22/15
 
   val a = new rational(2)                         //> a  : anurag.rational = 2/1
   val b = new rational(2, 3)                      //> b  : anurag.rational = 2/3
