@@ -1,5 +1,0 @@
-package classy
-
-class week{
-
-}
